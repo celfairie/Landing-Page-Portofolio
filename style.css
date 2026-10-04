@@ -27,7 +27,7 @@ a {
   margin: 0 auto;
   overflow: hidden;
   background: #394d68;
-  color: rgb(65, 78, 104);
+  color: rgb(239, 245, 255);
 }
 
 /* HERO */
@@ -35,6 +35,7 @@ a {
   position: relative;
   height: 835px;
   background: #394d68;
+  overflow: hidden;
 }
 
 .navbar {
@@ -49,9 +50,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 250px;
 
-    background: rgb(206, 206, 253);
+    background: rgb(111, 132, 155);
 
     font: 400 15px/1 "Manrope", sans-serif;
     box-sizing: border-box;
@@ -61,43 +62,25 @@ a {
   position: absolute;
   top: 114px;
   left: 177px;
-  width: 1193px;
+  width: 373px;
   height: 563px;
   pointer-events: none;
+  opacity: 0.5;
 }
 
-.hero-decoration img:nth-child(1) {
-  position: absolute;
-  top: 34px;
-  left: 77px;
-  width: 373px;
-  height: 496px;
-  transform: rotate(-180deg);
-}
-
-.hero-decoration img:nth-child(2) {
-  position: absolute;
-  top: 343px;
-  left: 360px;
-  width: 147px;
-  height: 145px;
-  transform: rotate(-180deg);
-}
-
-.hero-decoration img:nth-child(3) {
-  position: absolute;
-  top: 133px;
-  left: 44px;
-  width: 88px;
-  height: 89px;
-  transform: rotate(-180deg);
+.hero-decoration img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .hero-content {
   position: absolute;
-  top: 189px;
-  left: 0;
-  width: 1054px;
+  top: 325px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   text-align: center;
 }
 
@@ -243,7 +226,7 @@ a {
 .recent-work {
   position: relative;
   height: 650px;
-  background: rgba(248, 244, 217, .5);
+  background: rgba(169, 211, 255, 0.5);
 }
 
 .recent-inner {
